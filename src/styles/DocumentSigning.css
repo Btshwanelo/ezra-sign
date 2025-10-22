@@ -1,0 +1,127 @@
+.document-signing {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.document-signing h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.field-container {
+  margin-bottom: 1.5rem;
+}
+
+.field-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.field-container input[type="text"],
+.field-container input[type="date"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.signature-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.signature-canvas {
+  border: 1px solid #ddd;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+.signature-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.signature-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signature-buttons button:hover {
+  background: #e0e0e0;
+}
+
+.signature-preview {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+}
+
+.signature-preview img {
+  max-width: 100%;
+  height: auto;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-option input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #45a049;
+}
+
+button[type="submit"]:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+  font-size: 1.2rem;
+} 
