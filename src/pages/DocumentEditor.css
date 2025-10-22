@@ -1,0 +1,98 @@
+/* DocumentEditor.css */
+
+/* Overall page layout */
+.page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Main content area */
+.document-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Disable all scrolling in PDF viewer */
+.rpv-core__viewer-canvas {
+  overflow: hidden !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  scroll-behavior: auto !important;
+}
+
+/* PDF viewer */
+.rpv-core__viewer {
+  width: 100% !important;
+  height: 100% !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: hidden !important;
+}
+
+/* Hide all scrollbars */
+.rpv-core__viewer::-webkit-scrollbar,
+.rpv-core__viewer-canvas::-webkit-scrollbar,
+.rpv-core__inner-pages::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Make sure pages are centered */
+.rpv-core__viewer-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Each page should fit in the viewport with no scrolling */
+.rpv-core__page {
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
+
+/* Make canvas layers fit properly */
+.rpv-core__canvas-layer {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
+
+/* Inner container should take full height and no scrolling */
+.rpv-core__inner-container {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Fix overflow issues */
+.rpv-core__inner-pages {
+  overflow: hidden !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+/* Ensure PDF pages are properly sized */
+.rpv-core__page-layer {
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
+
+/* Panel container */
+.document-viewer-container {
+  height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Additional selector to prevent scrolling on specific elements */
+.pdf-container,
+.rpv-core__viewer-layer {
+  overflow: hidden !important;
+}
